@@ -1,0 +1,101 @@
+.nav-bar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 20%;
+  left: 0;
+  margin-top: 60px;
+}
+
+.nav-bar li {
+  list-style: none;
+  overflow: visible;
+}
+
+.nav-bar a {
+  padding: 8px 8px 8px 8px;
+  font-size: 25px;
+  color: #3f3f3f;
+  display: block;
+  transition: 0.3s;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.nav-bar a:hover {
+  color: #8f8f8f;
+}
+
+a.active {
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-thickness: 5%;
+}
+
+.vertical-line {
+  border-right: 3px solid;
+  border-color: #8f8f8f;
+  height: 80%;
+  position: fixed;
+  left: 18%;
+  top: 10%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.burger-button {
+  cursor: pointer;
+  float: right;
+  margin-right: 10px;
+  line-height: 55px;
+  display: none;
+}
+
+/*repsonsiveness*/
+.checkbox {
+  display: none;
+}
+
+#menu-bar:checked ~ ul {
+  left: 0;
+}
+
+@media (max-width: 1300px) {
+  .burger-button {
+    display: block;
+  }
+
+  nav ul {
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    height: 2.5rem;
+    top: 20px;
+    text-align: center;
+    left: -120%;
+    transition: ease-in-out;
+    z-index: 99;
+  }
+
+  nav ul li {
+    display: block;
+    padding-top: 10px;
+    margin-left: -10px;
+  }
+
+  .checkbox {
+    display: none;
+  }
+}
