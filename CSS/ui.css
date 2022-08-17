@@ -99,3 +99,13 @@ a.active {
     display: none;
   }
 }
+
+.back-button {
+  background-color: white;
+  border: solid black;
+  border-width: 2px;
+  margin-left: 20%;
+}
+.back-button:hover {
+  transform: scale(1.5);
+}
