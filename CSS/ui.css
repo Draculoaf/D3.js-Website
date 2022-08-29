@@ -56,15 +56,14 @@ a.active {
 }
 
 .burger-button {
+  font-size: 25px;
+  margin-left: 4%;
+  margin-top: 5%;
   cursor: pointer;
-  float: right;
-  margin-right: 10px;
-  line-height: 55px;
   display: none;
 }
 
-/*repsonsiveness*/
-.checkbox {
+#check {
   display: none;
 }
 
@@ -77,26 +76,22 @@ a.active {
     display: block;
   }
 
-  nav ul {
-    position: fixed;
-    width: 100%;
-    background-color: black;
-    height: 2.5rem;
-    top: 20px;
-    text-align: center;
-    left: -120%;
-    transition: ease-in-out;
-    z-index: 99;
-  }
-
-  nav ul li {
-    display: block;
-    padding-top: 10px;
-    margin-left: -10px;
-  }
-
-  .checkbox {
+  .vertical-line {
     display: none;
+  }
+
+  .nav-bar ul {
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.859);
+    height: 100%;
+    transition: ease-in-out;
+    /*This does not work, therefore, the checked Ul does not work either
+    margin-left: -120%;
+    */
+  }
+
+  #check:checked ~ ul {
+    left: 0;
   }
 }
 
