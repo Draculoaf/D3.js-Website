@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="/CSS/ui.css" />
-    <link rel="stylesheet" href="/CSS/blog.css" />
+    <link rel="stylesheet" href="/IM3B/CSS/ui.css" />
+    <link rel="stylesheet" href="/IM3B/CSS/blog.css" />
     <script
       src="https://kit.fontawesome.com/85a1e4b239.js"
       crossorigin="anonymous"
     ></script>
+    <script src="/IM3B/JS/search-bar.js"></script>
   </head>
   <body>
     <div class="vertical-line"></div>
@@ -25,6 +26,21 @@
         <li><a href="/IM3B/blog.html">blog</a></li>
         <li><a href="/IM3B/data_art.html">data art</a></li>
         <li><a href="/IM3B/data_vis.html">data visualisation</a></li>
+
+        <div class="search-bar">
+          <form class="form">
+            <input
+              id="search"
+              type="text"
+              class="input"
+              placeholder="search..."
+            />
+            <button id="search" class="search-results">search</button>
+          </form>
+          <div class="search-results">
+            <ul class="results-list" id="results"></ul>
+          </div>
+        </div>
       </ul>
     </nav>
 
