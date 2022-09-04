@@ -13,3 +13,7 @@
 .u-image img {
   max-height: 300px;
 }
+
+.p-article-title {
+  font-size: 25px;
+}
