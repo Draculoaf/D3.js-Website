@@ -16,4 +16,10 @@
 
 .p-article-title {
   font-size: 25px;
+  text-align: center;
+}
+
+.h2 {
+  font-size: 15px;
+  text-align: center;
 }
