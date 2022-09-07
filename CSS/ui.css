@@ -71,27 +71,40 @@ a.active {
   left: 0;
 }
 
+.cross-button {
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
 @media (max-width: 1300px) {
   .burger-button {
     display: block;
+    position: fixed;
   }
 
   .vertical-line {
     display: none;
   }
 
-  .nav-bar ul {
-    max-width: 100%;
-    background-color: rgba(0, 0, 0, 0.859);
-    height: 100%;
+  .nav-bar {
     transition: ease-in-out;
-    /*This does not work, therefore, the checked Ul does not work either
+    width: 75vw;
+    background: rgb(228, 228, 228);
+    transition: ease-in-out;
+    top: -60px;
     margin-left: -120%;
-    */
+    max-width: 300px;
   }
 
-  #check:checked ~ ul {
-    left: 0;
+  #check:checked ~ .nav-bar {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 340px) {
+  .nav-bar {
+    width: 100vw;
   }
 }
 
