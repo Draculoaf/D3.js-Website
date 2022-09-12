@@ -77,6 +77,10 @@ a.active {
   margin-right: 10px;
 }
 
+.cross-button:hover {
+  color: #8f8f8f;
+}
+
 @media (max-width: 1300px) {
   .burger-button {
     display: block;
