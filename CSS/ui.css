@@ -21,6 +21,7 @@
   transition: 0.3s;
   text-decoration: none;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .nav-bar a:hover {
@@ -101,6 +102,10 @@ a.active {
     max-width: 300px;
   }
 
+  .nav-bar a{
+    cursor: pointer;
+  }
+  
   #check:checked ~ .nav-bar {
     margin-left: 0;
   }
