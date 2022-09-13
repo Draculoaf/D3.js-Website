@@ -12,7 +12,7 @@ const height = 800;
 const width = 800;
 
 const chartContainer = d3
-  .select("#d3-container")
+  .select("#sugar")
   .attr("width", width)
   .attr("height", height);
 const chart = chartContainer.append("g");
