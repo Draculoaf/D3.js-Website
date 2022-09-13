@@ -1,3 +1,5 @@
+//Data from https://www.eatthis.com/best-worst-chips-ranked/
+
 const fatData = [
   { name: "Doritos", fat: 1 },
   { name: "Cheetos", fat: 1.5 },
