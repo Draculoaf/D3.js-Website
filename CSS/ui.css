@@ -21,11 +21,12 @@
   transition: 0.3s;
   text-decoration: none;
   white-space: nowrap;
-  cursor: pointer;
+ 
 }
 
 .nav-bar a:hover {
   color: #8f8f8f;
+  cursor: pointer;
 }
 
 a.active {
@@ -102,7 +103,7 @@ a.active {
     max-width: 300px;
   }
 
-  .nav-bar a{
+  .nav-bar a:hover{
     cursor: pointer;
   }
   
