@@ -9,6 +9,18 @@ const fatData = [
   { name: "Cape Cod", fat: 0.5 },
 ];
 
+/*
+async function getData() {
+  const apiURL = "https://api.coindesk.com/v1/bpi/currentprice.json";
+  const apiData = await fetch(apiURL);
+  const apiJSON = await apiData.json();
+  console.log(apiData);
+}
+
+let selected = fatData;
+
+Linking the graph with an API*/
+
 const height = 800;
 const width = 800;
 
