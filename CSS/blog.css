@@ -23,3 +23,37 @@
   font-size: 20px;
   margin-left: 20%;
 }
+
+.p-graph-title {
+  text-align: center;
+  font-size: 25px;
+  padding-bottom: 20px;
+  transform: translate(0, -75%);
+}
+
+.data-button-container {
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -65%);
+  padding-bottom: 20px;
+}
+
+.data-button {
+  background-color: #ffffff; /* Green */
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.data-button:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}

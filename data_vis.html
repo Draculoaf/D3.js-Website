@@ -8,8 +8,8 @@
     <title>Data Visualisation</title>
 
     <link rel="stylesheet" href="/CSS/ui.css" />
-    <!--<link rel="stylesheet" href="/IM3B/CSS/svg.css" />
-    <link rel="stylesheet" href="/IM3B/CSS/blog.css" />-->
+    <!--<link rel="stylesheet" href="/IM3B/CSS/svg.css" />-->
+    <link rel="stylesheet" href="/CSS/blog.css" />
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script
       src="https://kit.fontawesome.com/85a1e4b239.js"
@@ -45,11 +45,19 @@
       </div>
     </div>
 
-    <!-- Add 2 buttons -->
-    <button onclick="update(data1)">Sugar content in soft drinks</button>
-    <button onclick="update(data2)">Saturated fats in crisps</button>
+    <h1 class="p-graph-title">
+      An interactive graph which combines the graphs above
+    </h1>
 
-    <!-- Create a div where the graph will take place -->
+    <div class="data-button-container">
+      <button onclick="update(data1)" class="data-button">
+        Sugar content in soft drinks
+      </button>
+      <button onclick="update(data2)" class="data-button">
+        Saturated fats in crisps
+      </button>
+    </div>
+
     <div id="my_dataviz"></div>
 
     <script src="interactive.js"></script>

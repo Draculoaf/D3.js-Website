@@ -1,8 +1,11 @@
 // create 2 data_set
 var data1 = [
-  { group: "A", value: 4 },
-  { group: "B", value: 16 },
-  { group: "C", value: 8 },
+  { name: "Cocoa-Cola", fat: 39 },
+  { name: "Sprite", fat: 38 },
+  { name: "Fanta", fat: 28 },
+  { name: "Mountain Dew", fat: 46 },
+  { name: "Pepsi", fat: 41 },
+  { name: "7 Up", fat: 38 },
 ];
 
 var data2 = [
@@ -81,3 +84,6 @@ function update(data) {
 
 // Initialize the plot with the first dataset
 update(data1);
+
+// SVG align center
+d3.select("#my_dataviz").attr("align", "center");
