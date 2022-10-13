@@ -60,3 +60,20 @@ function yAxis(g) {
     .append("g")
     .call(yAxis);
 }
+
+svg
+  .selectAll("bar")
+  .data(data)
+  .enter()
+  .append("rect")
+  .attr("x", function (d) {
+    return x(d.Country);
+  })
+  .attr("y", function (d) {
+    return y(d.Value);
+  })
+  .attr("width", x.bandwidth())
+  .attr("height", function (d) {
+    return height - y(d.Value);
+  })
+  .attr("fill", "#69b3a2");
