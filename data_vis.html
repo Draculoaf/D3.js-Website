@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Data Visualisation</title>
 
-    <link rel="stylesheet" href="/CSS/ui.css" />
+    <link rel="stylesheet" href="/IM3B/CSS/ui.css" />
     <!--<link rel="stylesheet" href="/IM3B/CSS/svg.css" />-->
-    <link rel="stylesheet" href="/CSS/blog.css" />
+    <link rel="stylesheet" href="/IM3B/CSS/blog.css" />
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script
       src="https://kit.fontawesome.com/85a1e4b239.js"
@@ -45,8 +45,17 @@
       </div>
     </div>
 
+    <div id="app">
+      <div id="d3-container">
+        <svg></svg>
+      </div>
+      <div id="data">
+        <ul></ul>
+      </div>
+    </div>
+
     <h1 class="p-graph-title">
-      An interactive graph which combines the graphs above
+      An interactive graph which showing the graphs above
     </h1>
 
     <div class="data-button-container">
@@ -60,6 +69,6 @@
 
     <div id="my_dataviz"></div>
 
-    <script src="interactive.js"></script>
+    <script src="/IM3B/JS/interactive.js"></script>
   </body>
 </html>

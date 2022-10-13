@@ -36,7 +36,7 @@
   top: 32%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -65%);
+  transform: translate(-50%, 50%);
   padding-bottom: 20px;
 }
 

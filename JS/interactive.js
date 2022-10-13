@@ -76,7 +76,7 @@ function update(data) {
     .attr("height", function (d) {
       return height - y(d.fat);
     })
-    .attr("fill", "#69b3a2");
+    .attr("fill", "#efb010");
 
   // If less group in the new dataset, I delete the ones not in use anymore
   u.exit().remove();
