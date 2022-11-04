@@ -21,7 +21,6 @@
   transition: 0.3s;
   text-decoration: none;
   white-space: nowrap;
- 
 }
 
 .nav-bar a:hover {
@@ -103,10 +102,10 @@ a.active {
     max-width: 300px;
   }
 
-  .nav-bar a:hover{
+  .nav-bar a:hover {
     cursor: pointer;
   }
-  
+
   #check:checked ~ .nav-bar {
     margin-left: 0;
   }
@@ -128,31 +127,6 @@ a.active {
   transform: scale(1.5);
 }
 
-.u-image{
+.u-image {
   margin-left: 20%;
-}
-
-/*
-#mySearch {
-  width: 100%;
-  font-size: 18px;
-  padding: 11px;
-  border: 1px solid #ddd;
-}
-
-#myMenu {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-#myMenu li a {
-  padding: 12px;
-  text-decoration: none;
-  color: black;
-  display: block;
-}
-
-#myMenu li a:hover {
-  background-color: #eee;
 }
