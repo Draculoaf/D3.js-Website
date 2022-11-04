@@ -128,19 +128,17 @@ a.active {
 }
 
 .u-image {
+  margin-left: 27%;
+  max-width: 1000px;
+  margin-top: 1.5%;
+}
+
+.u-datart {
   margin-left: 20%;
 }
 
-/* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+.art-desc {
+  margin-left: 20%;
+  font-size: 20px;
+  padding-right: 5px;
 }
