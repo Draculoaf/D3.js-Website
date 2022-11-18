@@ -8,15 +8,14 @@ const sugarData = [
   { name: "7 Up", sugar: 38 },
 ];
 
-const height = 800;
-const width = 800;
+const height = 460;
+const width = 400;
 
 const chartContainer = d3
   .select("#d3-container-1")
-  //.append("chartContainer")
+
   .attr("width", width)
   .attr("height", height);
-//.attr("viewBox", [0, 0, width, height])
 
 const chart = chartContainer.append("g");
 
