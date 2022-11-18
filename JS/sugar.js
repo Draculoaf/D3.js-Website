@@ -12,9 +12,12 @@ const height = 800;
 const width = 800;
 
 const chartContainer = d3
-  .select("#d3-container")
+  .select("#d3-container-1")
+  //.append("chartContainer")
   .attr("width", width)
   .attr("height", height);
+//.attr("viewBox", [0, 0, width, height])
+
 const chart = chartContainer.append("g");
 
 const xScale = d3.scaleBand().rangeRound([0, width]).padding(0.1);

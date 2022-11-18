@@ -25,7 +25,7 @@ const height = 800;
 const width = 800;
 
 const chartContainer = d3
-  .select("#fat")
+  .select("#d3-container-2")
   .attr("width", width)
   .attr("height", height);
 const chart = chartContainer.append("g");
