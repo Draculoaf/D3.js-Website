@@ -28,12 +28,12 @@
   text-align: center;
   font-size: 25px;
   padding-bottom: 20px;
-  transform: translate(0, -75%);
+  transform: translate(0, 10%);
 }
 
 .data-button-container {
   position: absolute;
-  top: 32%;
+  top: -5%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, 50%);
@@ -56,4 +56,8 @@
 .data-button:hover {
   cursor: pointer;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+#my_dataviz {
+  padding-top: 4%;
 }
