@@ -9,18 +9,6 @@ const fatData = [
   { name: "Cape Cod", fat: 0.5 },
 ];
 
-/*
-async function getData() {
-  const apiURL = "https://api.coindesk.com/v1/bpi/currentprice.json";
-  const apiData = await fetch(apiURL);
-  const apiJSON = await apiData.json();
-  console.log(apiData);
-}
-
-let selected = fatData;
-
-Linking the graph with an API*/
-
 const height = 800;
 const width = 800;
 
@@ -45,7 +33,7 @@ chart
   .attr("height", (data) => height - yScale(data.price))
   .attr("width", xScale.bandwidth())
   .attr("x", (data) => xScale(data.name))
-  .attr("y", (data) => yScale(data.sugar));
+  .attr("y", (data) => yScale(data.fat));
 
 function xAxis(g) {
   g.attr("transform", "translate(0,{$height-margin.bottom})")
@@ -60,20 +48,3 @@ function yAxis(g) {
     .append("g")
     .call(yAxis);
 }
-
-svg
-  .selectAll("bar")
-  .data(data)
-  .enter()
-  .append("rect")
-  .attr("x", function (d) {
-    return x(d.Country);
-  })
-  .attr("y", function (d) {
-    return y(d.Value);
-  })
-  .attr("width", x.bandwidth())
-  .attr("height", function (d) {
-    return height - y(d.Value);
-  })
-  .attr("fill", "#69b3a2");

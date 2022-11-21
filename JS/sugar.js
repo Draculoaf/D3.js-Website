@@ -8,44 +8,27 @@ const sugarData = [
   { name: "7 Up", sugar: 38 },
 ];
 
-const height = 460;
-const width = 400;
+// set the dimensions and margins of the graph
+var margin = { top: 30, right: 30, bottom: 70, left: 60 },
+  width = 460 - margin.left - margin.right,
+  height = 400 - margin.top - margin.bottom;
 
-const chartContainer = d3
+// append the svg object to the body of the page
+var svg = d3
   .select("#d3-container-1")
+  .append("svg")
+  .attr("width", width + margin.left + margin.right)
+  .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-  .attr("width", width)
-  .attr("height", height);
+// Initialize the X axis
+var x = d3.scaleBand().range([0, width]).padding(0.2);
+var xAxis = svg.append("g").attr("transform", "translate(0," + height + ")");
 
-const chart = chartContainer.append("g");
+// Initialize the Y axis
+var y = d3.scaleLinear().range([height, 0]);
+var yAxis = svg.append("g").attr("class", "myYaxis");
 
-const xScale = d3.scaleBand().rangeRound([0, width]).padding(0.1);
-const yScale = d3.scaleLinear().range([height, 0]);
-
-xScale.domain(sugarData.map((d) => d.name));
-yScale.domain([0, d3.max(sugarData, (d) => d.price) + 1]);
-
-chart
-  .selectAll(".bar")
-  .data(sugarData)
-  .enter()
-  .append("rect")
-  .classed(".bar", true)
-  .attr("height", (data) => height - yScale(data.price))
-  .attr("width", xScale.bandwidth())
-  .attr("x", (data) => xScale(data.name))
-  .attr("y", (data) => yScale(data.sugar));
-
-function xAxis(g) {
-  g.attr("transform", "translate(0,{$height-margin.bottom})")
-    .call(d3.axisBottom(xScale).tickFormat((i) => data[i].name))
-    .append("g")
-    .call(xAxis);
-}
-
-function yAxis(g) {
-  g.attr("transform", "translate(${margin.left,0")
-    .call(d3.axisLeft(yScale).ticks(null, sugarData.format))
-    .append("g")
-    .call(yAxis);
-}
+// SVG align center
+d3.select("#d3-container-1").attr("align", "center");
