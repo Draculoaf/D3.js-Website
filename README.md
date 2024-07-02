@@ -1,3 +1,3 @@
-# IM3B
+# Data Website with D3.js
 This website was made to practice D3.js
-To see this website deployed using GitHub Pages, go to https://draculoaf.github.io/IM3B/
+To see this website deployed using GitHub Pages, go to https://draculoaf.github.io/D3.js-Website/
